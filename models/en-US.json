@@ -31,7 +31,9 @@
                 "umm {position}",
                 "I play {position}",
                 "I mostly play {position}",
-                "I like to play {position}"
+                "I like to play {position}",
+                "mostly {position}",
+                "{position} mostly"
               ]
             },
             {
@@ -47,7 +49,9 @@
                 "umm {skill}",
                 "I play {skill}",
                 "I mostly play {skill}",
-                "I like to play {skill}"
+                "I like to play {skill}",
+                "mostly {skill}",
+                "{skill} mostly"
               ]
             },
             {
@@ -63,7 +67,10 @@
                 "umm {loyalty}",
                 "I play {loyalty}",
                 "I mostly play {loyalty}",
-                "I like to play {loyalty}"
+                "I like to play {loyalty}",
+                "I will {loyalty}",
+                "I will maybe {loyalty}",
+                "I think I will {loyalty}"
               ]
             },
             {
@@ -79,7 +86,10 @@
                 "umm {style_of_play}",
                 "I play {style_of_play}",
                 "I mostly play {style_of_play}",
-                "I like to play {style_of_play}"
+                "I like to play {style_of_play}",
+                "I will {style_of_play}",
+                "I will maybe {style_of_play}",
+                "I think I will {style_of_play}"
               ]
             },
             {
@@ -95,7 +105,10 @@
                 "umm {personality}",
                 "I play {personality}",
                 "I mostly play {personality}",
-                "I like to play {personality}"
+                "I like to play {personality}",
+                "I will {personality}",
+                "I will maybe {personality}",
+                "I think I will {personality}"
               ]
             },
             {
@@ -111,7 +124,10 @@
                 "umm {family_or_game}",
                 "I play {family_or_game}",
                 "I mostly play {family_or_game}",
-                "I like to play {family_or_game}"
+                "I like to play {family_or_game}",
+                "I will {family_or_game}",
+                "I will maybe {family_or_game}",
+                "I think I will {family_or_game}"
               ]
             },
             {
@@ -127,7 +143,10 @@
                 "umm {attitude}",
                 "I play {attitude}",
                 "I mostly play {attitude}",
-                "I like to play {attitude}"
+                "I like to play {attitude}",
+                "I will {attitude}",
+                "I will maybe {attitude}",
+                "I think I will {attitude}"
               ]
             },
             {
@@ -143,7 +162,10 @@
                 "umm {relationship}",
                 "I play {relationship}",
                 "I mostly play {relationship}",
-                "I like to play {relationship}"
+                "I like to play {relationship}",
+                "I will {relationship}",
+                "I will maybe {relationship}",
+                "I think I will {relationship}"
               ]
             },
             {
@@ -159,14 +181,14 @@
                 "umm {bank_relation}",
                 "I play {bank_relation}",
                 "I mostly play {bank_relation}",
-                "I like to play {bank_relation}"
+                "I like to play {bank_relation}",
+                "I will {bank_relation}",
+                "I will maybe {bank_relation}",
+                "I think I will {bank_relation}"
               ]
             }
           ],
-          "samples": [
-            "find footballer",
-            "lets find footballer in me"
-          ]
+          "samples": ["find footballer", "lets find footballer in me"]
         },
         {
           "name": "AMAZON.YesIntent",
@@ -183,11 +205,7 @@
             {
               "name": {
                 "value": "defence",
-                "synonyms": [
-                  "left back",
-                  "right back",
-                  "defensive"
-                ]
+                "synonyms": ["left back", "right back", "defensive"]
               }
             },
             {
@@ -243,10 +261,7 @@
             {
               "name": {
                 "value": "tackle",
-                "synonyms": [
-                  "standing tackle",
-                  "slide tackle"
-                ]
+                "synonyms": ["standing tackle", "slide tackle"]
               }
             },
             {
@@ -282,7 +297,7 @@
                 "value": "low",
                 "synonyms": [
                   "where i could be all star",
-                  "all start",
+                  "all star",
                   "leave the current club",
                   "leave",
                   "leave club",
@@ -299,8 +314,6 @@
               "name": {
                 "value": "high",
                 "synonyms": [
-                  "club with history",
-                  "club with the history",
                   "stay in the club",
                   "stay at club",
                   "stay at the club",
@@ -379,20 +392,13 @@
             {
               "name": {
                 "value": "balanced",
-                "synonyms": [
-                  " best of both world",
-                  "both"
-                ]
+                "synonyms": [" best of both world", "both"]
               }
             },
             {
               "name": {
                 "value": "game",
-                "synonyms": [
-                  "train",
-                  "training",
-                  "game"
-                ]
+                "synonyms": ["train", "training", "game"]
               }
             },
             {
@@ -466,11 +472,7 @@
             {
               "name": {
                 "value": "single",
-                "synonyms": [
-                  "bajrang dal",
-                  "alone",
-                  "single"
-                ]
+                "synonyms": ["bajrang dal", "alone", "single"]
               }
             }
           ],

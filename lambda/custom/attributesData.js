@@ -51,6 +51,7 @@ module.exports = Object.freeze({
       tackle: [
         `Yes, tackling is an most important skill. It is what determines the match`
       ],
+      header: [`Oh nice! Headers are hard to master.`],
       speed: [
         `Speed has been always a great asset for a player`,
         `Oh nice! You will do good in european football.`
