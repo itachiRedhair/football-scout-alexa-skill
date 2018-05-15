@@ -1,0 +1,684 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "football scout",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "CollectAttributes",
+          "slots": [
+            {
+              "name": "position",
+              "type": "position",
+              "samples": [
+                "{position} I think",
+                "{position} i guess",
+                "i think {position}",
+                "I guess {position}",
+                "{position} maybe",
+                "maybe {position}",
+                "umm {position}",
+                "I play {position}",
+                "I mostly play {position}",
+                "I like to play {position}"
+              ]
+            },
+            {
+              "name": "skill",
+              "type": "skill",
+              "samples": [
+                "{skill} I think",
+                "{skill} i guess",
+                "i think {skill}",
+                "I guess {skill}",
+                "{skill} maybe",
+                "maybe {skill}",
+                "umm {skill}",
+                "I play {skill}",
+                "I mostly play {skill}",
+                "I like to play {skill}"
+              ]
+            },
+            {
+              "name": "loyalty",
+              "type": "loyalty",
+              "samples": [
+                "{loyalty} I think",
+                "{loyalty} i guess",
+                "i think {loyalty}",
+                "I guess {loyalty}",
+                "{loyalty} maybe",
+                "maybe {loyalty}",
+                "umm {loyalty}",
+                "I play {loyalty}",
+                "I mostly play {loyalty}",
+                "I like to play {loyalty}"
+              ]
+            },
+            {
+              "name": "style_of_play",
+              "type": "style_of_play",
+              "samples": [
+                "{style_of_play} I think",
+                "{style_of_play} i guess",
+                "i think {style_of_play}",
+                "I guess {style_of_play}",
+                "{style_of_play} maybe",
+                "maybe {style_of_play}",
+                "umm {style_of_play}",
+                "I play {style_of_play}",
+                "I mostly play {style_of_play}",
+                "I like to play {style_of_play}"
+              ]
+            },
+            {
+              "name": "personality",
+              "type": "personality",
+              "samples": [
+                "{personality} I think",
+                "{personality} i guess",
+                "i think {personality}",
+                "I guess {personality}",
+                "{personality} maybe",
+                "maybe {personality}",
+                "umm {personality}",
+                "I play {personality}",
+                "I mostly play {personality}",
+                "I like to play {personality}"
+              ]
+            },
+            {
+              "name": "family_or_game",
+              "type": "family_or_game",
+              "samples": [
+                "{family_or_game} I think",
+                "{family_or_game} i guess",
+                "i think {family_or_game}",
+                "I guess {family_or_game}",
+                "{family_or_game} maybe",
+                "maybe {family_or_game}",
+                "umm {family_or_game}",
+                "I play {family_or_game}",
+                "I mostly play {family_or_game}",
+                "I like to play {family_or_game}"
+              ]
+            },
+            {
+              "name": "attitude",
+              "type": "attitude",
+              "samples": [
+                "{attitude} I think",
+                "{attitude} i guess",
+                "i think {attitude}",
+                "I guess {attitude}",
+                "{attitude} maybe",
+                "maybe {attitude}",
+                "umm {attitude}",
+                "I play {attitude}",
+                "I mostly play {attitude}",
+                "I like to play {attitude}"
+              ]
+            },
+            {
+              "name": "relationship",
+              "type": "relationship",
+              "samples": [
+                "{relationship} I think",
+                "{relationship} i guess",
+                "i think {relationship}",
+                "I guess {relationship}",
+                "{relationship} maybe",
+                "maybe {relationship}",
+                "umm {relationship}",
+                "I play {relationship}",
+                "I mostly play {relationship}",
+                "I like to play {relationship}"
+              ]
+            },
+            {
+              "name": "bank_relation",
+              "type": "bank_relation",
+              "samples": [
+                "{bank_relation} I think",
+                "{bank_relation} i guess",
+                "i think {bank_relation}",
+                "I guess {bank_relation}",
+                "{bank_relation} maybe",
+                "maybe {bank_relation}",
+                "umm {bank_relation}",
+                "I play {bank_relation}",
+                "I mostly play {bank_relation}",
+                "I like to play {bank_relation}"
+              ]
+            }
+          ],
+          "samples": [
+            "find footballer",
+            "lets find footballer in me"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "defence",
+                "synonyms": [
+                  "left back",
+                  "right back",
+                  "defensive"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "mid_fielder",
+                "synonyms": [
+                  "defensive mid fielder",
+                  "attacking mid fielder",
+                  "centre attack mid fielder"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "attack",
+                "synonyms": [
+                  "winger",
+                  "left winger",
+                  "right winger",
+                  "attacking",
+                  "forward"
+                ]
+              }
+            }
+          ],
+          "name": "position"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "header",
+                "synonyms": [
+                  "header goa",
+                  "goal with headers",
+                  "head",
+                  "heading",
+                  "headers"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "finishing",
+                "synonyms": [
+                  "finesse",
+                  "finish the game",
+                  "shoot",
+                  "finish"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "tackle",
+                "synonyms": [
+                  "standing tackle",
+                  "slide tackle"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "speed",
+                "synonyms": [
+                  "run past",
+                  "run",
+                  "fast",
+                  "winger pace",
+                  "wind",
+                  "pace"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "dribble",
+                "synonyms": [
+                  "dribble across",
+                  "dribble across player",
+                  "dribble past"
+                ]
+              }
+            }
+          ],
+          "name": "skill"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "low",
+                "synonyms": [
+                  "where i could be all star",
+                  "all start",
+                  "leave the current club",
+                  "leave",
+                  "leave club",
+                  "leave the club"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "medium"
+              }
+            },
+            {
+              "name": {
+                "value": "high",
+                "synonyms": [
+                  "club with history",
+                  "club with the history",
+                  "stay in the club",
+                  "stay at club",
+                  "stay at the club",
+                  "stay"
+                ]
+              }
+            }
+          ],
+          "name": "loyalty"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "team",
+                "synonyms": [
+                  "pass",
+                  "pass the ball to other player",
+                  "pass the ball to another forward",
+                  "pass the ball",
+                  "team game",
+                  "team play",
+                  "get with team",
+                  "get along with team"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "self",
+                "synonyms": [
+                  "solo game",
+                  "solo",
+                  "goal directly",
+                  "shoot myself",
+                  "shoot the ball myself",
+                  "shoot the ball"
+                ]
+              }
+            }
+          ],
+          "name": "style_of_play"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "extrovert",
+                "synonyms": [
+                  "at the bar",
+                  "bar",
+                  "dance",
+                  "drink and dance",
+                  "classy"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "introvert",
+                "synonyms": [
+                  "at the home",
+                  "home",
+                  "enjoy myself",
+                  "sit in the corner",
+                  "sit and enjoy my beer",
+                  "simple"
+                ]
+              }
+            }
+          ],
+          "name": "personality"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "balanced",
+                "synonyms": [
+                  " best of both world",
+                  "both"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "game",
+                "synonyms": [
+                  "train",
+                  "training",
+                  "game"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "family",
+                "synonyms": [
+                  "spend with family",
+                  "time with family",
+                  "spend the time with family",
+                  "family"
+                ]
+              }
+            }
+          ],
+          "name": "family_or_game"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "aggressive",
+                "synonyms": [
+                  "shit talk",
+                  "trash talk",
+                  "fight back",
+                  "fighting with him",
+                  "join him",
+                  "start a fight"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "calm",
+                "synonyms": [
+                  "face it like gentleman",
+                  "take it easy and walk away",
+                  "take it easy",
+                  "take it calm"
+                ]
+              }
+            }
+          ],
+          "name": "attitude"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "flexible",
+                "synonyms": [
+                  "multiple girlfriends",
+                  "multiple",
+                  "girls come and go",
+                  "girls they come and go"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "concrete",
+                "synonyms": [
+                  "in relationship",
+                  "one wife",
+                  "one love for entire life",
+                  "one love",
+                  "one love for the life"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "single",
+                "synonyms": [
+                  "bajrang dal",
+                  "alone",
+                  "single"
+                ]
+              }
+            }
+          ],
+          "name": "relationship"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "not_clean",
+                "synonyms": [
+                  "money",
+                  "keep money",
+                  "keep the money",
+                  "keep it"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "clean",
+                "synonyms": [
+                  "pay taxes",
+                  "taxes",
+                  "pay my taxes",
+                  "pay your taxes",
+                  "notify the bank"
+                ]
+              }
+            }
+          ],
+          "name": "bank_relation"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "CollectAttributes",
+          "confirmationRequired": false,
+          "slots": [
+            {
+              "name": "position",
+              "type": "position",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.539147511319.306368843353"
+              }
+            },
+            {
+              "name": "skill",
+              "type": "skill",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.539147511319.565567549260"
+              }
+            },
+            {
+              "name": "loyalty",
+              "type": "loyalty",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.539147511319.12630615692"
+              }
+            },
+            {
+              "name": "style_of_play",
+              "type": "style_of_play",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.539147511319.453552876207"
+              }
+            },
+            {
+              "name": "personality",
+              "type": "personality",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.539147511319.11340371885"
+              }
+            },
+            {
+              "name": "family_or_game",
+              "type": "family_or_game",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.539147511319.1515899562410"
+              }
+            },
+            {
+              "name": "attitude",
+              "type": "attitude",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.539147511319.818775797065"
+              }
+            },
+            {
+              "name": "relationship",
+              "type": "relationship",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.539147511319.406000008227"
+              }
+            },
+            {
+              "name": "bank_relation",
+              "type": "bank_relation",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.539147511319.344861035340"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.539147511319.1515899562410",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What family or game?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.539147511319.818775797065",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what attitude"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.539147511319.406000008227",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what relationship"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.539147511319.344861035340",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what bank relation"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.539147511319.11340371885",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what personlaity"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.539147511319.453552876207",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what style of play"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.539147511319.12630615692",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what loyalty"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.539147511319.565567549260",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what skill"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.539147511319.306368843353",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what position"
+          }
+        ]
+      }
+    ]
+  }
+}
