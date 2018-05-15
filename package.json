@@ -1,0 +1,28 @@
+{
+  "name": "alexa-skill",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":
+      "alexa-skill-local --file lambda/custom/index.js --config lambda/custom/asl-config.json",
+    "start:debug":
+      "alexa-skill-local --inspect-brk --file lambda/custom/index.js --config lambda/custom/asl-config.json",
+    "deploy": "ask deploy -t lambda -p adminakshay",
+    "getModel":
+      "ask api get-model -s amzn1.ask.skill.8cb68b22-38bf-4ce3-a469-3c79424da506 -g development -l en-US>models/en-US.json -p adminakshay",
+    "uploadModelUS":
+      "ask api update-model -s amzn1.ask.skill.8cb68b22-38bf-4ce3-a469-3c79424da506 --file models/en-US.json -l en-US --profile adminakshay --stage development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itachiRedhair/football-scout-alexa-skill.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itachiRedhair/football-scout-alexa-skill/issues"
+  },
+  "homepage":
+    "https://github.com/itachiRedhair/football-scout-alexa-skill#readme"
+}
