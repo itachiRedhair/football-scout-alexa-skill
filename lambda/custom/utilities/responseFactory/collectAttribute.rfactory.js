@@ -2,7 +2,8 @@
 const {
   randomQuestionPicker,
   randomAnswerHintPicker,
-  randomSuccessResponse
+  randomSuccessResponse,
+  randomize
 } = require("./../helper/random.helper");
 const {
   validateAttributeSlots,
@@ -18,6 +19,17 @@ const messages = require("./../../messages");
 const attributeSlots = require("./../../constants").attributeSlots;
 const intents = require("./../../constants").intents;
 const session = require("./../../constants").session;
+
+const preQuestion = [
+  `Here's the next question.`,
+  `Now answer this.`,
+  `Okay, here's the next question.`,
+  `Here's next`,
+  `Answer this one.`,
+  `Be honest with this one.`,
+  `Time for next question`,
+  `You are doing great. Here's your next question`
+];
 
 const collectAttributesResponse = handlerInput => {
   const response = handlerInput.responseBuilder;
@@ -67,7 +79,7 @@ const collectAttributesResponse = handlerInput => {
           .value.name
       );
 
-      prompt += successResponse + ` `;
+      prompt += successResponse + ` ` + randomize(preQuestion) + ` `;
     } else {
       currentSlotNumber = 0;
     }
