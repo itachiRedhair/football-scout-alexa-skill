@@ -9,7 +9,7 @@ module.exports = Object.freeze({
     ],
     attributes: {
       position: ["attack"],
-      skill: ["dribble", "speed", "tackle", "finishing", "header"],
+      skill: ["speed", "finishing"],
       loyalty: ["medium"],
       style_of_play: ["self"],
       personality: ["extrovert"],
@@ -27,7 +27,7 @@ module.exports = Object.freeze({
     ],
     attributes: {
       position: ["attack"],
-      skill: ["dribble", "speed", "passing", "finishing"],
+      skill: ["passing", "finishing"],
       loyalty: ["high"],
       style_of_play: ["team"],
       personality: ["extrovert"],
@@ -45,7 +45,7 @@ module.exports = Object.freeze({
     ],
     attributes: {
       position: ["attack"],
-      skill: ["dribble", "speed"],
+      skill: ["dribble", "finishing"],
       loyalty: ["high"],
       style_of_play: ["team"],
       personality: ["introvert"],
@@ -58,12 +58,12 @@ module.exports = Object.freeze({
   tony_kroos: {
     name: "Tony Kross",
     prompts: [
-      `You are Toni Kross of Real Madrid. You are one of the one of the most enigmatic footballers in the world.`,
+      `You are Toni Kross of Real Madrid. You are one of the most enigmatic footballers in the world.`,
       `You are Toni Kross of Real Madrid. You realy are great at those long shots.`
     ],
     attributes: {
-      position: ["mid fielder"],
-      skill: ["dribble", "tackle"],
+      position: ["mid_fielder"],
+      skill: ["passing", "tackle"],
       loyalty: ["high"],
       style_of_play: ["team"],
       personality: ["introvert"],
@@ -81,7 +81,7 @@ module.exports = Object.freeze({
     ],
     attributes: {
       position: ["defence"],
-      skill: ["tackle"],
+      skill: ["tackle", "header"],
       loyalty: ["high"],
       style_of_play: ["team"],
       personality: ["extrovert"],
@@ -99,7 +99,7 @@ module.exports = Object.freeze({
     ],
     attributes: {
       position: ["defence"],
-      skill: ["tackle"],
+      skill: ["tackle", "header"],
       loyalty: ["high"],
       style_of_play: ["team"],
       personality: ["extrovert"],
@@ -117,7 +117,7 @@ module.exports = Object.freeze({
     ],
     attributes: {
       position: ["attack"],
-      skill: ["dribble", "speed", "passing"],
+      skill: ["dribble", "speed"],
       loyalty: ["low"],
       style_of_play: ["self"],
       personality: ["extrovert"],

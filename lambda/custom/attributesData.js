@@ -60,13 +60,13 @@ module.exports = Object.freeze({
       finishing: [`A great finisher is what wins the matches.`],
       passing: [`Pep guardiola would be proud of you.`]
     },
-    weight: 2
+    weight: 3
   },
   loyalty: {
     questions: {
       question_1: {
         value:
-          "If you are offered a ton load of money, will you leave the club or stay at the club?",
+          "If you are offered a ton load of money by other club, will you leave the club or stay at the club?",
         answerHints: ["Will you leave the club or stay?"]
       }
       // question_2: {
@@ -110,7 +110,7 @@ module.exports = Object.freeze({
       ],
       team: [`Indeed! Football is a team game.`]
     },
-    weight: 1.5
+    weight: 2
   },
   personality: {
     questions: {
@@ -142,7 +142,7 @@ module.exports = Object.freeze({
       extrovert: [``],
       introvert: [``]
     },
-    weight: 2
+    weight: 3
   },
   family_or_game: {
     questions: {
@@ -164,7 +164,7 @@ module.exports = Object.freeze({
       game: [``],
       balanced: [`You are the idol.`]
     },
-    weight: 1.5
+    weight: 1
   },
   attitude: {
     questions: {
@@ -232,6 +232,6 @@ module.exports = Object.freeze({
       clean: [`You are an ideal citizen.`],
       not_clean: [`Uh huh. Okay.`]
     },
-    weight: 1
+    weight: 3
   }
 });
