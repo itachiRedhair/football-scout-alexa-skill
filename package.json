@@ -10,9 +10,9 @@
       "alexa-skill-local --inspect-brk --file lambda/custom/index.js --config lambda/custom/asl-config.json",
     "deploy": "ask deploy -t lambda -p adminakshay",
     "getModel":
-      "ask api get-model -s amzn1.ask.skill.8cb68b22-38bf-4ce3-a469-3c79424da506 -g development -l en-US>models/en-US.json -p adminakshay",
-    "uploadModelUS":
-      "ask api update-model -s amzn1.ask.skill.8cb68b22-38bf-4ce3-a469-3c79424da506 --file models/en-US.json -l en-US --profile adminakshay --stage development"
+      "ask api get-model -s amzn1.ask.skill.8cb68b22-38bf-4ce3-a469-3c79424da506 -g development -l en-US>models/en-US.json -p adminakshay && ask api get-model -s amzn1.ask.skill.8cb68b22-38bf-4ce3-a469-3c79424da506 -g development -l en-GB>models/en-GB.json -p adminakshay && ask api get-model -s amzn1.ask.skill.8cb68b22-38bf-4ce3-a469-3c79424da506 -g development -l en-IN>models/en-IN.json -p adminakshay",
+    "uploadModel":
+      "ask api update-model -s amzn1.ask.skill.8cb68b22-38bf-4ce3-a469-3c79424da506 --file models/en-US.json -l en-US --profile adminakshay --stage development && ask api update-model -s amzn1.ask.skill.8cb68b22-38bf-4ce3-a469-3c79424da506 --file models/en-GB.json -l en-GB --profile adminakshay --stage development && ask api update-model -s amzn1.ask.skill.8cb68b22-38bf-4ce3-a469-3c79424da506 --file models/en-IN.json -l en-IN --profile adminakshay --stage development"
   },
   "repository": {
     "type": "git",

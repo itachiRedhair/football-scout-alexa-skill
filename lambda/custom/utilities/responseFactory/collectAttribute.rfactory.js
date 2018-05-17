@@ -24,11 +24,11 @@ const preQuestion = [
   `Here's the next question.`,
   `Now answer this.`,
   `Okay, here's the next question.`,
-  `Here's next`,
+  `Here's next.`,
   `Answer this one.`,
   `Be honest with this one.`,
-  `Time for next question`,
-  `You are doing great. Here's your next question`
+  `Time for next question.`,
+  `You are doing great. Here's your next question.`
 ];
 
 const collectAttributesResponse = handlerInput => {
@@ -41,7 +41,11 @@ const collectAttributesResponse = handlerInput => {
   if (validateAttributeSlots(slots)) {
     const playerInfo = getBestMatchedPlayer(slots);
     console.log("inside validateAttbiuteSltos, playerInfo->", playerInfo);
-    return response.speak(playerInfo.name).getResponse();
+    let prompt =
+      playerInfo.prompt +
+      ` ` +
+      `Call me if you want to try out again. Until then bye!`;
+    return response.speak(prompt).getResponse();
   }
 
   if (

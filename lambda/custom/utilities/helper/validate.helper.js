@@ -5,8 +5,8 @@ const { getSession, setSession } = require("./../helper/session.helper");
 const session = require("./../../constants").session;
 
 const attributesAcceptedValues = {
-  position: ["attack", "mid_fielder", "defence", "header"],
-  skill: ["tackle", "speed", "dribble", "finishing"],
+  position: ["attack", "mid_fielder", "defence"],
+  skill: ["tackle", "speed", "dribble", "finishing", "passing", "header"],
   loyalty: ["low", "medium", "high"],
   style_of_play: ["self", "team"],
   personality: ["introvert", "extrovert"],

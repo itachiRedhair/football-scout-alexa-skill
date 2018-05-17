@@ -37,11 +37,7 @@ const CollectAttributes = {
     console.log(JSON.stringify(handlerInput));
     const { request } = handlerInput.requestEnvelope;
     const state = getSession(handlerInput)[session.STATE];
-    return (
-      (state === states.COLLECT_ATTRIBUTES ||
-        state === states.SHOULD_COLLECT_ATTRIBUTES) &&
-      request.intent.name === intents.CollectAttributes
-    );
+    return request.intent.name === intents.CollectAttributes;
   },
 
   handle(handlerInput) {

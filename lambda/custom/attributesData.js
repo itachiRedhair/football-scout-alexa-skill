@@ -5,7 +5,7 @@ module.exports = Object.freeze({
     questions: {
       question_1: {
         value:
-          "What position do you play? You can something like attack or defence.",
+          "What position do you play? You can say something like attack or defence.",
         answerHints: ["Pick one from attack, defence or mid fielder"]
       },
       question_2: {
@@ -49,7 +49,7 @@ module.exports = Object.freeze({
     },
     successResponses: {
       tackle: [
-        `Yes, tackling is an most important skill. It is what determines the match`
+        `Yes, tackling is an most important skill. It is what determines the match.`
       ],
       header: [`Oh nice! Headers are hard to master.`],
       speed: [
@@ -57,7 +57,8 @@ module.exports = Object.freeze({
         `Oh nice! You will do good in european football.`
       ],
       dribble: [`Dribbling is what makes football fun.`],
-      finishing: [`A great finisher is what wins the matches.`]
+      finishing: [`A great finisher is what wins the matches.`],
+      passing: [`Pep guardiola would be proud of you.`]
     },
     weight: 2
   },
@@ -65,14 +66,14 @@ module.exports = Object.freeze({
     questions: {
       question_1: {
         value:
-          "If you are offered a ton load of money, will you leave the club or stay at the club where your fan loves you?",
-        answerHints: ["Will you leave the club or stay?"]
-      },
-      question_2: {
-        value:
-          "Will you play for the club with history or play where you could be the all star?",
+          "If you are offered a ton load of money, will you leave the club or stay at the club?",
         answerHints: ["Will you leave the club or stay?"]
       }
+      // question_2: {
+      //   value:
+      //     "Will you play for the club with history or play where you could be the all star?",
+      //   answerHints: ["Will you leave the club or stay?"]
+      // }
     },
     successResponses: {
       high: [`Oh, your fans will be pleased.`],
@@ -169,7 +170,7 @@ module.exports = Object.freeze({
     questions: {
       question_1: {
         value:
-          "Woah! That guy's gonna start a fight? What will you do? Take it calm or go join him?",
+          "If a guy is gonna start a fight? What will you do? Take it calm or go join him?",
         answerHints: [
           "Take it calm or start fighting with him?",
           "Take it easy and walk away or fight back."
@@ -178,7 +179,10 @@ module.exports = Object.freeze({
       question_2: {
         value:
           "Opponent team gets a penalty. Will you trash talk or face it like a gentleman.",
-        answerHints: ["You can say something like this and this."]
+        answerHints: [
+          "Will you trash talk or face it like a gentleman?",
+          "Trash talk or be calm?"
+        ]
       }
     },
     successResponses: {
@@ -200,10 +204,6 @@ module.exports = Object.freeze({
       question_2: {
         value: "Are you single or in relationship?",
         answerHints: ["Pick one from single or relationship."]
-      },
-      question_3: {
-        value: "Do you prefer to have one wife or multiple girlfriends?",
-        answerHints: ["Will you rather have one wife or multiple girlfriends?"]
       }
     },
     successResponses: {
